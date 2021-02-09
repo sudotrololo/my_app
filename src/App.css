@@ -4,13 +4,25 @@ body {
 }
 
 .wrapper {
+  margin: 30px;
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 80vh;
   grid-gap: 15px;
   grid-template-areas: "header header" "sidebar content";
 }
 
 .content{
   grid-area: content;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color .4s ease-in-out;
+}
+
+a:hover {
+  color: #61DAFB;
 }
